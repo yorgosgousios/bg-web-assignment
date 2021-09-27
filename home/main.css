@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* .main-page {
+  filter: grayscale(1);
+} */
+
+.main-header {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 10px;
+  margin-top: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+.user .fa-user {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.username {
+  margin-right: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.navbar a {
+  list-style: none;
+}
+
+.mars {
+  display: inline-block;
+  border: 2px black solid;
+  border-radius: 50%;
+  padding: 6px;
+  padding-top: 21px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.searchbar {
+  display: block;
+}
+
+.searchbar input {
+  border-radius: 30px;
+  height: 29px;
+  padding-left: 25px;
+  width: 300px;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.fa-search {
+  position: relative;
+  left: 27px;
+  top: 2px;
+  z-index: 999;
+}
+
+.inline {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  display: inline-block;
+}
+.update {
+  display: inline-block;
+  font-size: 12px;
+  color: orangered;
+  margin-right: 10px;
+}
+
+.regions {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.region {
+  /* border: 2px black solid; */
+  margin: 20px;
+}
+
+.region p {
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.region img {
+  border: 2px rgb(151, 151, 151) solid;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.image {
+  position: relative;
+  width: 230px;
+}
+
+.image img {
+  width: 280px;
+}
+
+.btn {
+  position: absolute;
+  cursor: pointer;
+  top: 46%;
+  left: 38%;
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+  color: rgb(228, 222, 222);
+  font-size: 20px;
+  border: 1px black solid;
+  border-radius: 5px;
+  display: block;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.fa-star {
+  color: rgb(182, 182, 182);
+}
+
+.checked {
+  color: black;
+}
+
+.fa-star:hover,
+.fa-star:active {
+  color: black;
+}
+
+.modal {
+  width: 50%;
+  display: block;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(235, 232, 232);
+  box-shadow: 0px 0px 10px 0px;
+  z-index: 1000;
+  overflow-y: auto;
+  transition-duration: 500ms;
+}
+
+.modal img {
+  width: 100%;
+  height: 300px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.btn-modal {
+  background-color: rgb(172, 172, 172);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 34px;
+  margin-right: 20px;
+}
+
+.title-modal {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stars {
+  margin-left: 9px;
+  margin-top: 10px;
+}
+
+.paragraph {
+  padding: 10px;
+  font-style: italic;
+}
+
+.first-word {
+  font-weight: bold;
+}
+
+.amenities {
+  padding: 10px;
+}
+
+.available {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.disabled {
+  background: lightgray !important;
+  border: 1px solid rgb(175, 175, 175) !important;
+  color: rgb(175, 175, 175) !important;
+  cursor: not-allowed;
+}
+
+.available button {
+  flex: 1 0 21%;
+  margin: 9px;
+  height: 20px;
+  background: rgb(214, 214, 214);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.available button:hover {
+  background: rgb(104, 104, 104);
+  color: white;
+}
+
+.book {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.book button {
+  background: black;
+  cursor: pointer;
+  color: white;
+  padding: 6px 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* .modal-two {
+  display: block;
+}
+.modal-three {
+  display: block; */
+/* } */
+/* .modal-four {
+  display: none;
+}
+.modal-five {
+  display: none;
+}
+.modal-six {
+  display: none;
+} */
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
